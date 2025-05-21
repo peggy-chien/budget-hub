@@ -6,20 +6,24 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
     <div class="bg-white rounded-lg shadow p-6">
-      <app-total-balance></app-total-balance>
+      <app-total-balance-card [balance]="totalBalance"></app-total-balance-card>
     </div>
 
     <div class="bg-white rounded-lg shadow p-6">
-      <app-monthly-income></app-monthly-income>
+      <app-monthly-income-card [income]="monthlyIncome"></app-monthly-income-card>
     </div>
 
     <div class="bg-white rounded-lg shadow p-6">
-      <app-monthly-expenses></app-monthly-expenses>
+      <app-monthly-expenses-card [expenses]="monthlyExpenses"></app-monthly-expenses-card>
     </div>
 
     <div class="bg-white rounded-lg shadow p-6">
-      <app-savings-rate></app-savings-rate>
+      <app-savings-rate-card [rate]="savingsRate"></app-savings-rate-card>
     </div>
   </div>
 
+  <!-- Additional sections can be added here -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <!-- Placeholder for future components like charts, recent transactions, etc. -->
+  </div>
 </div>
